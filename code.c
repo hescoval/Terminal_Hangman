@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -151,6 +152,8 @@ void playhangman(char *s)
 		}
 
 		printhang(s, letused, errors);
+		if(guessed == strlen(s))
+			printf("\nGood job, you got it!");
 	}
 }
 
